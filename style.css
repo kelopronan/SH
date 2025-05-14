@@ -229,3 +229,9 @@ body {
   border: none;
   border-radius: 12px;
 }
+.playlist-box {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
