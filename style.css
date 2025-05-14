@@ -181,3 +181,14 @@ body {
   background-color: #c4a484;
   border-radius: 4px;
 }
+.fade-in-title {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in-title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
