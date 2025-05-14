@@ -11,3 +11,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 300 + i * 200);
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const title = document.querySelector(".fade-in-title");
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        title.classList.add("visible");
+      }
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(title);
+});
